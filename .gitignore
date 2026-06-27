@@ -1,0 +1,15 @@
+# Local API secrets — never commit
+iOS/SmartLedger/Resources/LocalSecrets.plist
+**/LocalSecrets.plist
+
+# Environment / credentials
+.env
+.env.*
+!.env.example
+credentials.json
+**/secrets.local.*
+
+# Xcode
+iOS/**/DerivedData/
+iOS/**/*.xcuserstate
+iOS/**/xcuserdata/

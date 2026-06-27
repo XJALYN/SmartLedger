@@ -1,0 +1,223 @@
+/* Tabs */
+"tab.chat" = "Chat";
+"tab.ledger" = "Ledger";
+"tab.stats" = "Stats";
+"tab.settings" = "Settings";
+
+/* Greetings */
+"greeting.morning" = "Good morning";
+"greeting.afternoon" = "Good afternoon";
+"greeting.evening" = "Good evening";
+"greeting.night" = "Good night";
+
+/* Chat */
+"chat.title" = "Ledger AI";
+"chat.welcome" = "Hi 👋 Ask about your spending like \"How much did I spend this month?\" or tell me an expense to record.";
+"chat.placeholder" = "Query spending or record an expense…";
+"chat.suggestion.coffee" = "☕ Coffee";
+"chat.suggestion.groceries" = "🛒 Groceries";
+"chat.suggestion.gas" = "⛽ Gas";
+"chat.suggestion.dining" = "🍽️ Dining";
+"chat.extracted_intro" = "Got it. Here's what I extracted:";
+"chat.confirm_save" = "Confirm & Save";
+"chat.reading_receipt" = "Reading receipt…";
+"chat.receipt_uploaded" = "Just grabbed this too";
+"chat.analyze_receipt" = "Please analyze this receipt";
+"chat.photo_source_title" = "Add Receipt Photo";
+"chat.photo_take" = "Take Photo";
+"chat.photo_library" = "Choose from Library";
+
+/* Confirm */
+"confirm.title" = "Confirm Expense";
+"confirm.ai_extracted" = "AI extracted";
+"confirm.receipt_captured" = "Receipt captured";
+"confirm.receipt" = "Receipt";
+"confirm.ocr_complete" = "OCR complete";
+"confirm.ai_insight %@" = "I matched this to %@ based on your past visits. Please confirm the details below.";
+"confirm.field.title" = "Title";
+"confirm.field.amount" = "Amount";
+"confirm.field.date" = "Date";
+"confirm.field.time" = "Time";
+"confirm.field.category" = "Category";
+"confirm.field.merchant" = "Merchant";
+"confirm.field.notes" = "Notes";
+"confirm.merchant" = "Merchant";
+"confirm.amount" = "Amount";
+"confirm.category" = "Category";
+"confirm.notes" = "Note";
+"confirm.notes_placeholder" = "Add a note...";
+"confirm.subtotal" = "Subtotal";
+"confirm.tax" = "Tax";
+"confirm.total" = "Total";
+"confirm.save" = "Save to Ledger";
+"confirm.discard" = "Discard this expense";
+"confirm.select_category" = "Select category";
+
+/* Ledger */
+"ledger.title" = "Expense Ledger";
+"ledger.search" = "Search expenses...";
+"ledger.filter.all" = "All";
+"ledger.month_total" = "This month total";
+"ledger.transactions" = "Transactions";
+"ledger.today" = "Today";
+"ledger.yesterday" = "Yesterday";
+"ledger.empty.title" = "No expenses yet";
+"ledger.empty.message" = "Start logging expenses with the AI assistant to build your financial history.";
+"ledger.empty.action" = "Add first expense";
+"ledger.delete" = "Delete Expense";
+
+/* Stats */
+"stats.overview" = "Overview";
+"stats.title" = "Spending Analytics";
+"stats.range.week" = "Week";
+"stats.range.month" = "Month";
+"stats.range.year" = "Year";
+"stats.range.custom" = "Custom";
+"stats.select_year" = "Select Year";
+"stats.start_date" = "Start Date";
+"stats.end_date" = "End Date";
+"stats.this_month" = "This month";
+"stats.custom_range" = "Custom range";
+"stats.year_label %lld" = "%lld";
+"stats.total_spent" = "Total Spent";
+"stats.vs_previous %@" = "vs %@ last period";
+"stats.top_category" = "Top Category";
+"stats.category_breakdown" = "Category Breakdown";
+"stats.categories" = "categories";
+"stats.daily_spending" = "Daily Spending";
+"stats.monthly_spending" = "Monthly Spending";
+"stats.yearly_spending" = "Yearly Spending";
+"stats.last_12_months" = "Last 12 months";
+"stats.last_10_years" = "Last 10 years";
+"stats.per_day" = "/day";
+"stats.per_month" = "/month";
+"stats.per_year" = "/year";
+"stats.this_week" = "This week";
+"stats.highest" = "Highest";
+"stats.average" = "Average";
+"stats.budget_progress" = "Budget Progress";
+"stats.on_track" = "On track";
+"stats.budget_of %@ %@" = "%@ of %@ budget";
+
+/* Settings */
+"settings.title" = "Settings";
+"settings.edit" = "Edit";
+"settings.version" = "SmartLedger v2.4.1 · Build 2048";
+"settings.credits.title" = "AI Compute Credits";
+"settings.credits.subtitle" = "Recharge via App Store · Powers AI recording & queries";
+"settings.credits.recharged %lld" = "%lld credits added successfully.";
+"settings.credits.restored %lld" = "%lld credits restored.";
+"settings.credits.restore" = "Restore Purchases";
+"settings.credits.nothing_to_restore" = "No purchases to restore.";
+"settings.credits.pack.credits %lld" = "%lld Credits";
+"settings.credits.pack.small" = "$0.99";
+"settings.credits.pack.large" = "$3.99";
+"settings.theme.title" = "Theme Color";
+"settings.theme.subtitle" = "Live preview across the app";
+"settings.section.preferences" = "Preferences";
+"settings.section.data" = "Data";
+"settings.section.account" = "Account";
+"settings.notifications.title" = "Notifications";
+"settings.notifications.subtitle" = "Reminders & weekly summaries";
+"settings.currency.title" = "Currency";
+"settings.language.title" = "Language";
+"settings.api_key.title" = "Bailian API Key";
+"settings.api_key.missing" = "Not configured";
+"settings.api_key.configured" = "Configured";
+"settings.api_key.placeholder" = "Enter DashScope API key";
+"settings.api_key.footer" = "Used for AI expense extraction via Alibaba Bailian (Qwen).";
+"settings.export.title" = "Export Ledger";
+"settings.export.subtitle" = "CSV · PDF · JSON";
+"settings.sync.title" = "Cloud Sync";
+"settings.sync.subtitle" = "Last synced just now";
+"settings.sync.active" = "Active";
+"settings.privacy.title" = "Privacy & Security";
+"settings.privacy.subtitle" = "Face ID, passcode, data";
+"settings.subscription.title" = "Subscription";
+"settings.subscription.subtitle" = "Pro · renews Dec 14";
+"settings.subscription.message" = "Subscription management will open in a future update.";
+"settings.help.title" = "Help & Support";
+"settings.help.subtitle" = "FAQ, contact, feedback";
+"settings.logout" = "Log Out";
+"settings.logout.message" = "Local data remains on this device.";
+"settings.profile.title" = "Edit Profile";
+"settings.profile.name" = "Name";
+"settings.profile.email" = "Email";
+
+/* Languages */
+"language.system" = "Follow System";
+"language.english" = "English";
+"language.chinese" = "简体中文";
+"language.japanese" = "日本語";
+"language.spanish" = "Español";
+"language.german" = "Deutsch";
+"language.french" = "Français";
+
+/* Currencies */
+"currency.cny" = "CNY · ¥";
+"currency.usd" = "USD · $";
+
+/* Themes */
+"theme.mint" = "Mint Green · Default";
+"theme.sky" = "Sky Blue";
+"theme.violet" = "Violet";
+"theme.rose" = "Rose";
+"theme.amber" = "Amber";
+
+/* Categories */
+"category.foodAndDrink" = "Food & Drink";
+"category.foodAndDrink.subtitle" = "Coffee shops & restaurants";
+"category.groceries" = "Groceries";
+"category.groceries.subtitle" = "Supermarkets & markets";
+"category.transport" = "Transport";
+"category.transport.subtitle" = "Gas, transit & rides";
+"category.home" = "Home";
+"category.home.subtitle" = "Utilities & household";
+"category.entertainment" = "Entertainment";
+"category.entertainment.subtitle" = "Streaming & fun";
+"category.dining" = "Dining";
+"category.dining.subtitle" = "Restaurants & cafes";
+"category.shopping" = "Shopping";
+"category.shopping.subtitle" = "Retail & online";
+"category.utilities" = "Utilities";
+"category.utilities.subtitle" = "Bills & services";
+"category.personal" = "Personal";
+"category.personal.subtitle" = "Care & wellness";
+"category.other" = "Other";
+"category.other.subtitle" = "Miscellaneous";
+
+/* Export */
+"export.format.csv" = "Export as CSV";
+"export.format.json" = "Export as JSON";
+"export.format.pdf" = "Export as PDF";
+
+/* Rating */
+"rating.title" = "Enjoying SmartLedger?";
+"rating.message" = "You've been using SmartLedger for a while. Would you mind rating us on the App Store?";
+"rating.rate_now" = "Rate SmartLedger";
+"rating.later" = "Maybe Later";
+"rating.never" = "Don't Ask Again";
+"rating.thank_you" = "Thank you for your support!";
+
+/* Common */
+"common.ok" = "OK";
+"common.done" = "Done";
+"common.save" = "Save";
+"common.cancel" = "Cancel";
+"common.close" = "Close";
+"common.view" = "View";
+"common.error" = "Error";
+"common.notice" = "Notice";
+
+/* Errors */
+"error.missing_api_key" = "Please add your Bailian API key in Settings.";
+"error.insufficient_credits" = "Not enough AI credits. Please recharge in Settings.";
+"error.invalid_response" = "Invalid response from AI service.";
+"error.parsing_failed" = "Could not parse expense details from AI response.";
+
+/* In-App Purchase */
+"iap.error.product_not_found" = "Unable to load products. Please try again later.";
+"iap.error.cancelled" = "Purchase cancelled.";
+"iap.error.pending" = "Purchase is pending approval.";
+"iap.error.failed" = "Purchase failed. Please try again.";
+"iap.error.unverified" = "Transaction could not be verified.";

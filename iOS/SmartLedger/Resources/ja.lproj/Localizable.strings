@@ -1,0 +1,200 @@
+/* Tabs */
+"tab.chat" = "チャット";
+"tab.ledger" = "家計簿";
+"tab.stats" = "統計";
+"tab.settings" = "設定";
+
+/* Greetings */
+"greeting.morning" = "おはようございます";
+"greeting.afternoon" = "こんにちは";
+"greeting.evening" = "こんばんは";
+"greeting.night" = "おやすみなさい";
+
+/* Chat */
+"chat.title" = "家計簿 AI";
+"chat.welcome" = "こんにちは 👋 レシートを撮影したり、支出を伝えたり、自由に話しかけてください — 記録します。";
+"chat.placeholder" = "支出について教えてください…";
+"chat.suggestion.coffee" = "☕ コーヒー";
+"chat.suggestion.groceries" = "🛒 食料品";
+"chat.suggestion.gas" = "⛽ ガソリン";
+"chat.suggestion.dining" = "🍽️ 外食";
+"chat.extracted_intro" = "了解しました。抽出した内容はこちらです：";
+"chat.confirm_save" = "確認して保存";
+"chat.reading_receipt" = "レシートを読み取り中…";
+"chat.receipt_uploaded" = "こちらも受け取りました";
+"chat.analyze_receipt" = "このレシートを分析してください";
+"chat.photo_source_title" = "レシート写真を追加";
+"chat.photo_take" = "写真を撮る";
+"chat.photo_library" = "ライブラリから選択";
+
+/* Confirm */
+"confirm.title" = "支出を確認";
+"confirm.ai_extracted" = "AI 抽出済み";
+"confirm.receipt_captured" = "レシートを撮影しました";
+"confirm.receipt" = "レシート";
+"confirm.ocr_complete" = "OCR 完了";
+"confirm.ai_insight %@" = "過去の利用履歴に基づき、%@ に一致しました。以下の詳細をご確認ください。";
+"confirm.field.title" = "タイトル";
+"confirm.field.amount" = "金額";
+"confirm.field.date" = "日付";
+"confirm.field.time" = "時刻";
+"confirm.field.category" = "カテゴリ";
+"confirm.field.merchant" = "店舗";
+"confirm.field.notes" = "メモ";
+"confirm.merchant" = "店舗";
+"confirm.amount" = "金額";
+"confirm.category" = "カテゴリ";
+"confirm.notes" = "メモ";
+"confirm.notes_placeholder" = "メモを追加…";
+"confirm.subtotal" = "小計";
+"confirm.tax" = "税";
+"confirm.total" = "合計";
+"confirm.save" = "家計簿に保存";
+"confirm.discard" = "この支出を破棄";
+"confirm.select_category" = "カテゴリを選択";
+
+/* Ledger */
+"ledger.title" = "支出一覧";
+"ledger.search" = "支出を検索…";
+"ledger.filter.all" = "すべて";
+"ledger.month_total" = "今月の合計";
+"ledger.transactions" = "取引";
+"ledger.today" = "今日";
+"ledger.yesterday" = "昨日";
+"ledger.empty.title" = "支出がまだありません";
+"ledger.empty.message" = "AI アシスタントで支出を記録し、家計の履歴を作りましょう。";
+"ledger.empty.action" = "最初の支出を追加";
+"ledger.delete" = "支出を削除";
+
+/* Stats */
+"stats.overview" = "概要";
+"stats.title" = "支出分析";
+"stats.range.week" = "週";
+"stats.range.month" = "月";
+"stats.range.year" = "年";
+"stats.total_spent" = "合計支出";
+"stats.vs_previous %@" = "前%@比";
+"stats.top_category" = "最多カテゴリ";
+"stats.category_breakdown" = "カテゴリ内訳";
+"stats.categories" = "カテゴリ";
+"stats.daily_spending" = "日別支出";
+"stats.this_week" = "今週";
+"stats.highest" = "最高";
+"stats.average" = "平均";
+"stats.budget_progress" = "予算の進捗";
+"stats.on_track" = "順調";
+"stats.budget_of %@ %@" = "予算 %@ のうち %@";
+
+/* Settings */
+"settings.title" = "設定";
+"settings.edit" = "編集";
+"settings.version" = "SmartLedger v2.4.1 · ビルド 2048";
+"settings.credits.title" = "AI クレジット";
+"settings.credits.subtitle" = "毎月リセット · 平均 18/日";
+"settings.credits.recharge" = "クレジットをチャージ";
+"settings.credits.recharged" = "100 クレジットを追加しました。";
+"settings.theme.title" = "テーマカラー";
+"settings.theme.subtitle" = "アプリ全体でライブプレビュー";
+"settings.section.preferences" = "環境設定";
+"settings.section.data" = "データ";
+"settings.section.account" = "アカウント";
+"settings.notifications.title" = "通知";
+"settings.notifications.subtitle" = "リマインダーと週次サマリー";
+"settings.currency.title" = "通貨";
+"settings.language.title" = "言語";
+"settings.api_key.title" = "百錬 API キー";
+"settings.api_key.missing" = "未設定";
+"settings.api_key.configured" = "設定済み";
+"settings.api_key.placeholder" = "DashScope API キーを入力";
+"settings.api_key.footer" = "Alibaba 百錬（Qwen）による AI 支出抽出に使用します。";
+"settings.export.title" = "家計簿をエクスポート";
+"settings.export.subtitle" = "CSV · PDF · JSON";
+"settings.sync.title" = "クラウド同期";
+"settings.sync.subtitle" = "たった今同期しました";
+"settings.sync.active" = "有効";
+"settings.privacy.title" = "プライバシーとセキュリティ";
+"settings.privacy.subtitle" = "Face ID、パスコード、データ";
+"settings.subscription.title" = "サブスクリプション";
+"settings.subscription.subtitle" = "Pro · 12月14日更新";
+"settings.subscription.message" = "サブスクリプション管理は今後のアップデートで提供予定です。";
+"settings.help.title" = "ヘルプとサポート";
+"settings.help.subtitle" = "FAQ、お問い合わせ、フィードバック";
+"settings.logout" = "ログアウト";
+"settings.logout.message" = "ローカルデータはこのデバイスに残ります。";
+"settings.profile.title" = "プロフィールを編集";
+"settings.profile.name" = "名前";
+"settings.profile.email" = "メール";
+
+/* Languages */
+"language.system" = "システムに従う";
+"language.english" = "English";
+"language.chinese" = "简体中文";
+"language.japanese" = "日本語";
+"language.spanish" = "Español";
+"language.german" = "Deutsch";
+"language.french" = "Français";
+
+/* Currencies */
+"currency.usd" = "USD · $";
+"currency.eur" = "EUR · €";
+"currency.cny" = "CNY · ¥";
+"currency.jpy" = "JPY · ¥";
+"currency.gbp" = "GBP · £";
+
+/* Themes */
+"theme.mint" = "ミントグリーン · デフォルト";
+"theme.sky" = "スカイブルー";
+"theme.violet" = "バイオレット";
+"theme.rose" = "ローズ";
+"theme.amber" = "アンバー";
+
+/* Categories */
+"category.foodAndDrink" = "飲食";
+"category.foodAndDrink.subtitle" = "カフェとレストラン";
+"category.groceries" = "食料品";
+"category.groceries.subtitle" = "スーパーと市場";
+"category.transport" = "交通";
+"category.transport.subtitle" = "ガソリン、公共交通、配車";
+"category.home" = "住居";
+"category.home.subtitle" = "光熱費と日用品";
+"category.entertainment" = "エンタメ";
+"category.entertainment.subtitle" = "ストリーミングとレジャー";
+"category.dining" = "外食";
+"category.dining.subtitle" = "レストランとカフェ";
+"category.shopping" = "ショッピング";
+"category.shopping.subtitle" = "小売とオンライン";
+"category.utilities" = "公共料金";
+"category.utilities.subtitle" = "請求とサービス";
+"category.personal" = "個人";
+"category.personal.subtitle" = "ケアとウェルネス";
+"category.other" = "その他";
+"category.other.subtitle" = "その他";
+
+/* Export */
+"export.format.csv" = "CSV でエクスポート";
+"export.format.json" = "JSON でエクスポート";
+"export.format.pdf" = "PDF でエクスポート";
+
+/* Rating */
+"rating.title" = "SmartLedger を楽しんでいますか？";
+"rating.message" = "SmartLedger をしばらくご利用いただいています。App Store で評価していただけますか？";
+"rating.rate_now" = "SmartLedger を評価";
+"rating.later" = "後で";
+"rating.never" = "今後表示しない";
+"rating.thank_you" = "ご支援ありがとうございます！";
+
+/* Common */
+"common.ok" = "OK";
+"common.done" = "完了";
+"common.save" = "保存";
+"common.cancel" = "キャンセル";
+"common.close" = "閉じる";
+"common.view" = "表示";
+"common.error" = "エラー";
+"common.notice" = "お知らせ";
+
+/* Errors */
+"error.missing_api_key" = "設定で百錬 API キーを追加してください。";
+"error.insufficient_credits" = "AI クレジットが不足しています。設定でチャージしてください。";
+"error.invalid_response" = "AI サービスから無効な応答が返されました。";
+"error.parsing_failed" = "AI 応答から支出の詳細を解析できませんでした。";

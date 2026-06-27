@@ -1,0 +1,223 @@
+/* Tabs */
+"tab.chat" = "聊天";
+"tab.ledger" = "账本";
+"tab.stats" = "统计";
+"tab.settings" = "设置";
+
+/* Greetings */
+"greeting.morning" = "早上好";
+"greeting.afternoon" = "下午好";
+"greeting.evening" = "晚上好";
+"greeting.night" = "晚安";
+
+/* Chat */
+"chat.title" = "账本 AI";
+"chat.welcome" = "嗨 👋 你可以问我消费情况，比如「这个月花了多少钱」，也可以告诉我一笔支出让我帮你记账。";
+"chat.placeholder" = "查询消费或记录支出…";
+"chat.suggestion.coffee" = "☕ 咖啡";
+"chat.suggestion.groceries" = "🛒 杂货";
+"chat.suggestion.gas" = "⛽ 加油";
+"chat.suggestion.dining" = "🍽️ 餐饮";
+"chat.extracted_intro" = "好的，这是我提取的信息：";
+"chat.confirm_save" = "确认并保存";
+"chat.reading_receipt" = "正在读取收据…";
+"chat.receipt_uploaded" = "我也收到了这个";
+"chat.analyze_receipt" = "请分析这张收据";
+"chat.photo_source_title" = "添加收据照片";
+"chat.photo_take" = "拍照";
+"chat.photo_library" = "从相册选择";
+
+/* Confirm */
+"confirm.title" = "确认支出";
+"confirm.ai_extracted" = "AI 已提取";
+"confirm.receipt_captured" = "收据已拍摄";
+"confirm.receipt" = "收据";
+"confirm.ocr_complete" = "OCR 完成";
+"confirm.ai_insight %@" = "根据你以往的记录，我将此匹配到 %@。请确认以下详情。";
+"confirm.field.title" = "标题";
+"confirm.field.amount" = "金额";
+"confirm.field.date" = "日期";
+"confirm.field.time" = "时间";
+"confirm.field.category" = "分类";
+"confirm.field.merchant" = "商户";
+"confirm.field.notes" = "备注";
+"confirm.merchant" = "商户";
+"confirm.amount" = "金额";
+"confirm.category" = "分类";
+"confirm.notes" = "备注";
+"confirm.notes_placeholder" = "添加备注…";
+"confirm.subtotal" = "小计";
+"confirm.tax" = "税费";
+"confirm.total" = "合计";
+"confirm.save" = "保存到账本";
+"confirm.discard" = "丢弃此支出";
+"confirm.select_category" = "选择分类";
+
+/* Ledger */
+"ledger.title" = "支出账本";
+"ledger.search" = "搜索支出…";
+"ledger.filter.all" = "全部";
+"ledger.month_total" = "本月合计";
+"ledger.transactions" = "交易记录";
+"ledger.today" = "今天";
+"ledger.yesterday" = "昨天";
+"ledger.empty.title" = "暂无支出";
+"ledger.empty.message" = "使用 AI 助手开始记账，建立你的财务记录。";
+"ledger.empty.action" = "添加第一笔支出";
+"ledger.delete" = "删除支出";
+
+/* Stats */
+"stats.overview" = "概览";
+"stats.title" = "支出分析";
+"stats.range.week" = "周";
+"stats.range.month" = "月";
+"stats.range.year" = "年";
+"stats.range.custom" = "自定义";
+"stats.select_year" = "选择年份";
+"stats.start_date" = "开始日期";
+"stats.end_date" = "结束日期";
+"stats.this_month" = "本月";
+"stats.custom_range" = "自定义范围";
+"stats.year_label %lld" = "%lld年";
+"stats.total_spent" = "总支出";
+"stats.vs_previous %@" = "较上%@";
+"stats.top_category" = "最高分类";
+"stats.category_breakdown" = "分类明细";
+"stats.categories" = "个分类";
+"stats.daily_spending" = "每日支出";
+"stats.monthly_spending" = "每月支出";
+"stats.yearly_spending" = "每年支出";
+"stats.last_12_months" = "近12个月";
+"stats.last_10_years" = "近10年";
+"stats.per_day" = "/天";
+"stats.per_month" = "/月";
+"stats.per_year" = "/年";
+"stats.this_week" = "本周";
+"stats.highest" = "最高";
+"stats.average" = "平均";
+"stats.budget_progress" = "预算进度";
+"stats.on_track" = "进度正常";
+"stats.budget_of %@ %@" = "已用 %@，预算 %@";
+
+/* Settings */
+"settings.title" = "设置";
+"settings.edit" = "编辑";
+"settings.version" = "SmartLedger v2.4.1 · 构建 2048";
+"settings.credits.title" = "AI 算力积分";
+"settings.credits.subtitle" = "通过 App Store 内购充值 · 用于 AI 记账与查询";
+"settings.credits.recharged %lld" = "已成功添加 %lld 积分。";
+"settings.credits.restored %lld" = "已恢复 %lld 积分。";
+"settings.credits.restore" = "恢复购买";
+"settings.credits.nothing_to_restore" = "没有可恢复的购买记录。";
+"settings.credits.pack.credits %lld" = "%lld 积分";
+"settings.credits.pack.small" = "¥6";
+"settings.credits.pack.large" = "¥25";
+"settings.theme.title" = "主题颜色";
+"settings.theme.subtitle" = "全应用实时预览";
+"settings.section.preferences" = "偏好设置";
+"settings.section.data" = "数据";
+"settings.section.account" = "账户";
+"settings.notifications.title" = "通知";
+"settings.notifications.subtitle" = "提醒与每周摘要";
+"settings.currency.title" = "货币";
+"settings.language.title" = "语言";
+"settings.api_key.title" = "百炼 API 密钥";
+"settings.api_key.missing" = "未配置";
+"settings.api_key.configured" = "已配置";
+"settings.api_key.placeholder" = "输入 DashScope API 密钥";
+"settings.api_key.footer" = "用于通过阿里云百炼（Qwen）进行 AI 支出提取。";
+"settings.export.title" = "导出账本";
+"settings.export.subtitle" = "CSV · PDF · JSON";
+"settings.sync.title" = "云同步";
+"settings.sync.subtitle" = "刚刚同步";
+"settings.sync.active" = "已启用";
+"settings.privacy.title" = "隐私与安全";
+"settings.privacy.subtitle" = "Face ID、密码、数据";
+"settings.subscription.title" = "订阅";
+"settings.subscription.subtitle" = "Pro · 12 月 14 日续订";
+"settings.subscription.message" = "订阅管理将在后续更新中开放。";
+"settings.help.title" = "帮助与支持";
+"settings.help.subtitle" = "常见问题、联系、反馈";
+"settings.logout" = "退出登录";
+"settings.logout.message" = "本地数据将保留在此设备上。";
+"settings.profile.title" = "编辑资料";
+"settings.profile.name" = "姓名";
+"settings.profile.email" = "邮箱";
+
+/* Languages */
+"language.system" = "跟随系统";
+"language.english" = "English";
+"language.chinese" = "简体中文";
+"language.japanese" = "日本語";
+"language.spanish" = "Español";
+"language.german" = "Deutsch";
+"language.french" = "Français";
+
+/* Currencies */
+"currency.cny" = "人民币 · ¥";
+"currency.usd" = "美元 · $";
+
+/* Themes */
+"theme.mint" = "薄荷绿 · 默认";
+"theme.sky" = "天蓝色";
+"theme.violet" = "紫罗兰";
+"theme.rose" = "玫瑰色";
+"theme.amber" = "琥珀色";
+
+/* Categories */
+"category.foodAndDrink" = "餐饮";
+"category.foodAndDrink.subtitle" = "咖啡店与餐厅";
+"category.groceries" = "杂货";
+"category.groceries.subtitle" = "超市与市场";
+"category.transport" = "交通";
+"category.transport.subtitle" = "加油、公交与打车";
+"category.home" = "居家";
+"category.home.subtitle" = "水电与家用";
+"category.entertainment" = "娱乐";
+"category.entertainment.subtitle" = "流媒体与休闲";
+"category.dining" = "外出就餐";
+"category.dining.subtitle" = "餐厅与咖啡馆";
+"category.shopping" = "购物";
+"category.shopping.subtitle" = "零售与网购";
+"category.utilities" = "公用事业";
+"category.utilities.subtitle" = "账单与服务";
+"category.personal" = "个人";
+"category.personal.subtitle" = "护理与健康";
+"category.other" = "其他";
+"category.other.subtitle" = "杂项";
+
+/* Export */
+"export.format.csv" = "导出为 CSV";
+"export.format.json" = "导出为 JSON";
+"export.format.pdf" = "导出为 PDF";
+
+/* Rating */
+"rating.title" = "喜欢 SmartLedger 吗？";
+"rating.message" = "你已经使用 SmartLedger 一段时间了。愿意在 App Store 为我们评分吗？";
+"rating.rate_now" = "为 SmartLedger 评分";
+"rating.later" = "稍后再说";
+"rating.never" = "不再询问";
+"rating.thank_you" = "感谢你的支持！";
+
+/* Common */
+"common.ok" = "好";
+"common.done" = "完成";
+"common.save" = "保存";
+"common.cancel" = "取消";
+"common.close" = "关闭";
+"common.view" = "查看";
+"common.error" = "错误";
+"common.notice" = "提示";
+
+/* Errors */
+"error.missing_api_key" = "请在设置中添加百炼 API 密钥。";
+"error.insufficient_credits" = "AI 积分不足，请在设置中充值。";
+"error.invalid_response" = "AI 服务返回无效响应。";
+"error.parsing_failed" = "无法从 AI 响应中解析支出详情。";
+
+/* In-App Purchase */
+"iap.error.product_not_found" = "无法加载商品，请稍后重试。";
+"iap.error.cancelled" = "购买已取消。";
+"iap.error.pending" = "购买正在处理中，请稍候。";
+"iap.error.failed" = "购买失败，请重试。";
+"iap.error.unverified" = "交易验证失败，请联系支持。";

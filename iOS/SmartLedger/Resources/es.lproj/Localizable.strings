@@ -1,0 +1,200 @@
+/* Tabs */
+"tab.chat" = "Chat";
+"tab.ledger" = "Libro";
+"tab.stats" = "Estadísticas";
+"tab.settings" = "Ajustes";
+
+/* Greetings */
+"greeting.morning" = "Buenos días";
+"greeting.afternoon" = "Buenas tardes";
+"greeting.evening" = "Buenas noches";
+"greeting.night" = "Buenas noches";
+
+/* Chat */
+"chat.title" = "Ledger AI";
+"chat.welcome" = "Hola 👋 Haz una foto del recibo, cuéntame en qué gastaste o simplemente habla — lo registraré por ti.";
+"chat.placeholder" = "Cuéntame un gasto…";
+"chat.suggestion.coffee" = "☕ Café";
+"chat.suggestion.groceries" = "🛒 Comestibles";
+"chat.suggestion.gas" = "⛽ Gasolina";
+"chat.suggestion.dining" = "🍽️ Restaurante";
+"chat.extracted_intro" = "Entendido. Esto es lo que extraje:";
+"chat.confirm_save" = "Confirmar y guardar";
+"chat.reading_receipt" = "Leyendo recibo…";
+"chat.receipt_uploaded" = "También recibí esto";
+"chat.analyze_receipt" = "Analiza este recibo, por favor";
+"chat.photo_source_title" = "Añadir foto del recibo";
+"chat.photo_take" = "Tomar foto";
+"chat.photo_library" = "Elegir de la biblioteca";
+
+/* Confirm */
+"confirm.title" = "Confirmar gasto";
+"confirm.ai_extracted" = "Extraído por IA";
+"confirm.receipt_captured" = "Recibo capturado";
+"confirm.receipt" = "Recibo";
+"confirm.ocr_complete" = "OCR completado";
+"confirm.ai_insight %@" = "Lo he asociado con %@ según tus visitas anteriores. Confirma los detalles a continuación.";
+"confirm.field.title" = "Título";
+"confirm.field.amount" = "Importe";
+"confirm.field.date" = "Fecha";
+"confirm.field.time" = "Hora";
+"confirm.field.category" = "Categoría";
+"confirm.field.merchant" = "Comercio";
+"confirm.field.notes" = "Notas";
+"confirm.merchant" = "Comercio";
+"confirm.amount" = "Importe";
+"confirm.category" = "Categoría";
+"confirm.notes" = "Nota";
+"confirm.notes_placeholder" = "Añadir una nota…";
+"confirm.subtotal" = "Subtotal";
+"confirm.tax" = "Impuesto";
+"confirm.total" = "Total";
+"confirm.save" = "Guardar en el libro";
+"confirm.discard" = "Descartar este gasto";
+"confirm.select_category" = "Seleccionar categoría";
+
+/* Ledger */
+"ledger.title" = "Libro de gastos";
+"ledger.search" = "Buscar gastos…";
+"ledger.filter.all" = "Todos";
+"ledger.month_total" = "Total del mes";
+"ledger.transactions" = "Transacciones";
+"ledger.today" = "Hoy";
+"ledger.yesterday" = "Ayer";
+"ledger.empty.title" = "Aún no hay gastos";
+"ledger.empty.message" = "Empieza a registrar gastos con el asistente de IA para crear tu historial financiero.";
+"ledger.empty.action" = "Añadir primer gasto";
+"ledger.delete" = "Eliminar gasto";
+
+/* Stats */
+"stats.overview" = "Resumen";
+"stats.title" = "Análisis de gastos";
+"stats.range.week" = "Semana";
+"stats.range.month" = "Mes";
+"stats.range.year" = "Año";
+"stats.total_spent" = "Total gastado";
+"stats.vs_previous %@" = "vs %@ anterior";
+"stats.top_category" = "Categoría principal";
+"stats.category_breakdown" = "Desglose por categoría";
+"stats.categories" = "categorías";
+"stats.daily_spending" = "Gasto diario";
+"stats.this_week" = "Esta semana";
+"stats.highest" = "Máximo";
+"stats.average" = "Promedio";
+"stats.budget_progress" = "Progreso del presupuesto";
+"stats.on_track" = "En buen camino";
+"stats.budget_of %@ %@" = "%@ de %@ de presupuesto";
+
+/* Settings */
+"settings.title" = "Ajustes";
+"settings.edit" = "Editar";
+"settings.version" = "SmartLedger v2.4.1 · Compilación 2048";
+"settings.credits.title" = "Créditos de IA";
+"settings.credits.subtitle" = "Se reinician mensualmente · Prom. 18/día";
+"settings.credits.recharge" = "Recargar créditos";
+"settings.credits.recharged" = "100 créditos añadidos correctamente.";
+"settings.theme.title" = "Color del tema";
+"settings.theme.subtitle" = "Vista previa en vivo en toda la app";
+"settings.section.preferences" = "Preferencias";
+"settings.section.data" = "Datos";
+"settings.section.account" = "Cuenta";
+"settings.notifications.title" = "Notificaciones";
+"settings.notifications.subtitle" = "Recordatorios y resúmenes semanales";
+"settings.currency.title" = "Moneda";
+"settings.language.title" = "Idioma";
+"settings.api_key.title" = "Clave API de Bailian";
+"settings.api_key.missing" = "No configurada";
+"settings.api_key.configured" = "Configurada";
+"settings.api_key.placeholder" = "Introduce la clave API de DashScope";
+"settings.api_key.footer" = "Se usa para la extracción de gastos con IA mediante Alibaba Bailian (Qwen).";
+"settings.export.title" = "Exportar libro";
+"settings.export.subtitle" = "CSV · PDF · JSON";
+"settings.sync.title" = "Sincronización en la nube";
+"settings.sync.subtitle" = "Sincronizado hace un momento";
+"settings.sync.active" = "Activa";
+"settings.privacy.title" = "Privacidad y seguridad";
+"settings.privacy.subtitle" = "Face ID, código, datos";
+"settings.subscription.title" = "Suscripción";
+"settings.subscription.subtitle" = "Pro · se renueva el 14 dic";
+"settings.subscription.message" = "La gestión de suscripciones estará disponible en una actualización futura.";
+"settings.help.title" = "Ayuda y soporte";
+"settings.help.subtitle" = "FAQ, contacto, comentarios";
+"settings.logout" = "Cerrar sesión";
+"settings.logout.message" = "Los datos locales permanecen en este dispositivo.";
+"settings.profile.title" = "Editar perfil";
+"settings.profile.name" = "Nombre";
+"settings.profile.email" = "Correo electrónico";
+
+/* Languages */
+"language.system" = "Seguir sistema";
+"language.english" = "English";
+"language.chinese" = "简体中文";
+"language.japanese" = "日本語";
+"language.spanish" = "Español";
+"language.german" = "Deutsch";
+"language.french" = "Français";
+
+/* Currencies */
+"currency.usd" = "USD · $";
+"currency.eur" = "EUR · €";
+"currency.cny" = "CNY · ¥";
+"currency.jpy" = "JPY · ¥";
+"currency.gbp" = "GBP · £";
+
+/* Themes */
+"theme.mint" = "Verde menta · Predeterminado";
+"theme.sky" = "Azul cielo";
+"theme.violet" = "Violeta";
+"theme.rose" = "Rosa";
+"theme.amber" = "Ámbar";
+
+/* Categories */
+"category.foodAndDrink" = "Comida y bebida";
+"category.foodAndDrink.subtitle" = "Cafeterías y restaurantes";
+"category.groceries" = "Comestibles";
+"category.groceries.subtitle" = "Supermercados y mercados";
+"category.transport" = "Transporte";
+"category.transport.subtitle" = "Gasolina, transporte y viajes";
+"category.home" = "Hogar";
+"category.home.subtitle" = "Servicios y hogar";
+"category.entertainment" = "Entretenimiento";
+"category.entertainment.subtitle" = "Streaming y ocio";
+"category.dining" = "Restaurantes";
+"category.dining.subtitle" = "Restaurantes y cafés";
+"category.shopping" = "Compras";
+"category.shopping.subtitle" = "Tiendas y online";
+"category.utilities" = "Servicios";
+"category.utilities.subtitle" = "Facturas y servicios";
+"category.personal" = "Personal";
+"category.personal.subtitle" = "Cuidado y bienestar";
+"category.other" = "Otros";
+"category.other.subtitle" = "Varios";
+
+/* Export */
+"export.format.csv" = "Exportar como CSV";
+"export.format.json" = "Exportar como JSON";
+"export.format.pdf" = "Exportar como PDF";
+
+/* Rating */
+"rating.title" = "¿Te gusta SmartLedger?";
+"rating.message" = "Llevas un tiempo usando SmartLedger. ¿Te importaría valorarnos en la App Store?";
+"rating.rate_now" = "Valorar SmartLedger";
+"rating.later" = "Quizá más tarde";
+"rating.never" = "No volver a preguntar";
+"rating.thank_you" = "¡Gracias por tu apoyo!";
+
+/* Common */
+"common.ok" = "OK";
+"common.done" = "Listo";
+"common.save" = "Guardar";
+"common.cancel" = "Cancelar";
+"common.close" = "Cerrar";
+"common.view" = "Ver";
+"common.error" = "Error";
+"common.notice" = "Aviso";
+
+/* Errors */
+"error.missing_api_key" = "Añade tu clave API de Bailian en Ajustes.";
+"error.insufficient_credits" = "No hay suficientes créditos de IA. Recarga en Ajustes.";
+"error.invalid_response" = "Respuesta no válida del servicio de IA.";
+"error.parsing_failed" = "No se pudieron analizar los detalles del gasto en la respuesta de IA.";

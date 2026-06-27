@@ -1,0 +1,75 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "SLCREDITS01",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "6",
+      "familyShareable" : false,
+      "internalID" : "6738291001",
+      "localizations" : [
+        {
+          "description" : "100 AI compute credits for SmartLedger",
+          "displayName" : "100 Credits",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "SmartLedger 100 个 AI 算力积分",
+          "displayName" : "100 积分",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.smartledger.app.credits.100",
+      "referenceName" : "Credits 100",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "25",
+      "familyShareable" : false,
+      "internalID" : "6738291002",
+      "localizations" : [
+        {
+          "description" : "500 AI compute credits for SmartLedger",
+          "displayName" : "500 Credits",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "SmartLedger 500 个 AI 算力积分",
+          "displayName" : "500 积分",
+          "locale" : "zh_Hans"
+        }
+      ],
+      "productID" : "com.smartledger.app.credits.500",
+      "referenceName" : "Credits 500",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

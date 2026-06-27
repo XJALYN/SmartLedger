@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		SL000001 /* SmartLedgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100001 /* SmartLedgerApp.swift */; };
+		SL000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100002 /* AppState.swift */; };
+		SL000003 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100003 /* AppSettings.swift */; };
+		SL000004 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100004 /* DesignTokens.swift */; };
+		SL000005 /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100005 /* ExpenseCategory.swift */; };
+		SL000006 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100006 /* Expense.swift */; };
+		SL000007 /* ExpenseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100007 /* ExpenseStore.swift */; };
+		SL000008 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100008 /* AnalyticsService.swift */; };
+		SL000009 /* BailianService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100009 /* BailianService.swift */; };
+		SL000010 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100010 /* ExportService.swift */; };
+		SL000011 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100011 /* Formatters.swift */; };
+		SL000012 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100012 /* RootView.swift */; };
+		SL000013 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100013 /* MainTabBar.swift */; };
+		SL000014 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100014 /* ChatView.swift */; };
+		SL000015 /* ConfirmExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100015 /* ConfirmExpenseView.swift */; };
+		SL000016 /* LedgerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100016 /* LedgerView.swift */; };
+		SL000017 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100017 /* StatsView.swift */; };
+		SL000018 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100018 /* SettingsView.swift */; };
+		SL000019 /* SecretsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100019 /* SecretsLoader.swift */; };
+		SL000027 /* ChatIntentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100027 /* ChatIntentService.swift */; };
+		SL000029 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100029 /* StoreKitManager.swift */; };
+		SL000033 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100033 /* ImagePicker.swift */; };
+		SL000020 /* AppSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100020 /* AppSettingsTests.swift */; };
+		SL000021 /* ExpenseStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100021 /* ExpenseStoreTests.swift */; };
+		SL000022 /* AnalyticsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100022 /* AnalyticsServiceTests.swift */; };
+		SL000023 /* BailianServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100023 /* BailianServiceTests.swift */; };
+		SL000024 /* ExpenseCategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100024 /* ExpenseCategoryTests.swift */; };
+		SL000025 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100025 /* LocalizationTests.swift */; };
+		SL000026 /* ExportServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100026 /* ExportServiceTests.swift */; };
+		SL000028 /* ChatIntentServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100028 /* ChatIntentServiceTests.swift */; };
+		SL000032 /* StoreKitManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100031 /* StoreKitManagerTests.swift */; };
+		SL000030 /* SmartLedgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = SL100030 /* SmartLedgerUITests.swift */; };
+		SL000110 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = SL100110 /* Localizable.strings */; };
+		SL000111 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = SL100111 /* Localizable.strings */; };
+		SL000112 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = SL100112 /* Localizable.strings */; };
+		SL000113 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = SL100113 /* Localizable.strings */; };
+		SL000114 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = SL100114 /* Localizable.strings */; };
+		SL000115 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = SL100115 /* Localizable.strings */; };
+		SL000116 /* LocalSecrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = SL200002 /* LocalSecrets.plist */; };
+		SL000117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = SL200005 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		SL500010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = SL700001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = SL400001;
+			remoteInfo = SmartLedger;
+		};
+		SL500011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = SL700001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = SL400001;
+			remoteInfo = SmartLedger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		SL100001 /* SmartLedgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLedgerApp.swift; sourceTree = "<group>"; };
+		SL100002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		SL100003 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		SL100004 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		SL100005 /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
+		SL100006 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		SL100007 /* ExpenseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseStore.swift; sourceTree = "<group>"; };
+		SL100008 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		SL100009 /* BailianService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BailianService.swift; sourceTree = "<group>"; };
+		SL100010 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		SL100011 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		SL100012 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		SL100013 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		SL100014 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		SL100015 /* ConfirmExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmExpenseView.swift; sourceTree = "<group>"; };
+		SL100016 /* LedgerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerView.swift; sourceTree = "<group>"; };
+		SL100017 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		SL100018 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		SL100019 /* SecretsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsLoader.swift; sourceTree = "<group>"; };
+		SL100027 /* ChatIntentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatIntentService.swift; sourceTree = "<group>"; };
+		SL100029 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		SL100033 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		SL200004 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		SL100020 /* AppSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsTests.swift; sourceTree = "<group>"; };
+		SL100021 /* ExpenseStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseStoreTests.swift; sourceTree = "<group>"; };
+		SL100022 /* AnalyticsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsServiceTests.swift; sourceTree = "<group>"; };
+		SL100023 /* BailianServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BailianServiceTests.swift; sourceTree = "<group>"; };
+		SL100024 /* ExpenseCategoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategoryTests.swift; sourceTree = "<group>"; };
+		SL100025 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
+		SL100026 /* ExportServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportServiceTests.swift; sourceTree = "<group>"; };
+		SL100028 /* ChatIntentServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatIntentServiceTests.swift; sourceTree = "<group>"; };
+		SL100031 /* StoreKitManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManagerTests.swift; sourceTree = "<group>"; };
+		SL100030 /* SmartLedgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLedgerUITests.swift; sourceTree = "<group>"; };
+		SL100110 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		SL100111 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		SL100112 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		SL100113 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		SL100114 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		SL100115 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		SL200001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		SL200002 /* LocalSecrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LocalSecrets.plist; sourceTree = "<group>"; };
+		SL200003 /* Secrets.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.example.plist; sourceTree = "<group>"; };
+		SL200005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		SL900001 /* SmartLedger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLedger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		SL900002 /* SmartLedgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartLedgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		SL900003 /* SmartLedgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartLedgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		SL300001 = {
+			isa = PBXGroup;
+			children = (
+				SL300002 /* SmartLedger */,
+				SL300016 /* SmartLedgerTests */,
+				SL300017 /* SmartLedgerUITests */,
+				SL300003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		SL300002 /* SmartLedger */ = {
+			isa = PBXGroup;
+			children = (
+				SL300004 /* App */,
+				SL300005 /* Models */,
+				SL300018 /* Services */,
+				SL300006 /* Views */,
+				SL300007 /* Resources */,
+			);
+			path = SmartLedger;
+			sourceTree = "<group>";
+		};
+		SL300003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				SL900001 /* SmartLedger.app */,
+				SL900002 /* SmartLedgerTests.xctest */,
+				SL900003 /* SmartLedgerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		SL300004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				SL100001 /* SmartLedgerApp.swift */,
+				SL100002 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		SL300005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				SL100003 /* AppSettings.swift */,
+				SL100004 /* DesignTokens.swift */,
+				SL100005 /* ExpenseCategory.swift */,
+				SL100006 /* Expense.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		SL300006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				SL100012 /* RootView.swift */,
+				SL300008 /* Components */,
+				SL300009 /* Chat */,
+				SL300010 /* Confirm */,
+				SL300011 /* Ledger */,
+				SL300012 /* Stats */,
+				SL300013 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		SL300007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				SL200005 /* Assets.xcassets */,
+				SL200001 /* Info.plist */,
+				SL200002 /* LocalSecrets.plist */,
+				SL200003 /* Secrets.example.plist */,
+				SL200004 /* Products.storekit */,
+				SL300014 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		SL300008 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				SL100013 /* MainTabBar.swift */,
+				SL100033 /* ImagePicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		SL300009 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				SL100014 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		SL300010 /* Confirm */ = {
+			isa = PBXGroup;
+			children = (
+				SL100015 /* ConfirmExpenseView.swift */,
+			);
+			path = Confirm;
+			sourceTree = "<group>";
+		};
+		SL300011 /* Ledger */ = {
+			isa = PBXGroup;
+			children = (
+				SL100016 /* LedgerView.swift */,
+			);
+			path = Ledger;
+			sourceTree = "<group>";
+		};
+		SL300012 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				SL100017 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		SL300013 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				SL100018 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		SL300016 /* SmartLedgerTests */ = {
+			isa = PBXGroup;
+			children = (
+				SL100020 /* AppSettingsTests.swift */,
+				SL100021 /* ExpenseStoreTests.swift */,
+				SL100022 /* AnalyticsServiceTests.swift */,
+				SL100023 /* BailianServiceTests.swift */,
+				SL100024 /* ExpenseCategoryTests.swift */,
+				SL100025 /* LocalizationTests.swift */,
+				SL100026 /* ExportServiceTests.swift */,
+				SL100028 /* ChatIntentServiceTests.swift */,
+				SL100031 /* StoreKitManagerTests.swift */,
+			);
+			path = SmartLedgerTests;
+			sourceTree = "<group>";
+		};
+		SL300017 /* SmartLedgerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				SL100030 /* SmartLedgerUITests.swift */,
+			);
+			path = SmartLedgerUITests;
+			sourceTree = "<group>";
+		};
+		SL300018 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				SL100007 /* ExpenseStore.swift */,
+				SL100008 /* AnalyticsService.swift */,
+				SL100009 /* BailianService.swift */,
+				SL100010 /* ExportService.swift */,
+				SL100011 /* Formatters.swift */,
+				SL100019 /* SecretsLoader.swift */,
+				SL100027 /* ChatIntentService.swift */,
+				SL100029 /* StoreKitManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		SL400001 /* SmartLedger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = SL600001 /* Build configuration list for PBXNativeTarget "SmartLedger" */;
+			buildPhases = (
+				SL500001 /* Sources */,
+				SL500002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartLedger;
+			productName = SmartLedger;
+			productReference = SL900001 /* SmartLedger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		SL400002 /* SmartLedgerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = SL600002 /* Build configuration list for PBXNativeTarget "SmartLedgerTests" */;
+			buildPhases = (
+				SL500003 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				SL500012 /* PBXTargetDependency */,
+			);
+			name = SmartLedgerTests;
+			productName = SmartLedgerTests;
+			productReference = SL900002 /* SmartLedgerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		SL400003 /* SmartLedgerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = SL600003 /* Build configuration list for PBXNativeTarget "SmartLedgerUITests" */;
+			buildPhases = (
+				SL500004 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				SL500013 /* PBXTargetDependency */,
+			);
+			name = SmartLedgerUITests;
+			productName = SmartLedgerUITests;
+			productReference = SL900003 /* SmartLedgerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		SL700001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					SL400001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					SL400002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = SL400001;
+					};
+					SL400003 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = SL400001;
+					};
+				};
+			};
+			buildConfigurationList = SL600000 /* Build configuration list for PBXProject "SmartLedger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+				ja,
+				es,
+				de,
+				fr,
+			);
+			mainGroup = SL300001;
+			productRefGroup = SL300003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				SL400001 /* SmartLedger */,
+				SL400002 /* SmartLedgerTests */,
+				SL400003 /* SmartLedgerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		SL500002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				SL000110 /* Localizable.strings in Resources */,
+				SL000111 /* Localizable.strings in Resources */,
+				SL000112 /* Localizable.strings in Resources */,
+				SL000113 /* Localizable.strings in Resources */,
+				SL000114 /* Localizable.strings in Resources */,
+				SL000115 /* Localizable.strings in Resources */,
+				SL000116 /* LocalSecrets.plist in Resources */,
+				SL000117 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SL500001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				SL000001 /* SmartLedgerApp.swift in Sources */,
+				SL000002 /* AppState.swift in Sources */,
+				SL000003 /* AppSettings.swift in Sources */,
+				SL000004 /* DesignTokens.swift in Sources */,
+				SL000005 /* ExpenseCategory.swift in Sources */,
+				SL000006 /* Expense.swift in Sources */,
+				SL000007 /* ExpenseStore.swift in Sources */,
+				SL000008 /* AnalyticsService.swift in Sources */,
+				SL000009 /* BailianService.swift in Sources */,
+				SL000010 /* ExportService.swift in Sources */,
+				SL000011 /* Formatters.swift in Sources */,
+				SL000012 /* RootView.swift in Sources */,
+				SL000013 /* MainTabBar.swift in Sources */,
+				SL000014 /* ChatView.swift in Sources */,
+				SL000015 /* ConfirmExpenseView.swift in Sources */,
+				SL000016 /* LedgerView.swift in Sources */,
+				SL000017 /* StatsView.swift in Sources */,
+				SL000018 /* SettingsView.swift in Sources */,
+				SL000019 /* SecretsLoader.swift in Sources */,
+				SL000027 /* ChatIntentService.swift in Sources */,
+				SL000029 /* StoreKitManager.swift in Sources */,
+				SL000033 /* ImagePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		SL500003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				SL000020 /* AppSettingsTests.swift in Sources */,
+				SL000021 /* ExpenseStoreTests.swift in Sources */,
+				SL000022 /* AnalyticsServiceTests.swift in Sources */,
+				SL000023 /* BailianServiceTests.swift in Sources */,
+				SL000024 /* ExpenseCategoryTests.swift in Sources */,
+				SL000025 /* LocalizationTests.swift in Sources */,
+				SL000026 /* ExportServiceTests.swift in Sources */,
+				SL000028 /* ChatIntentServiceTests.swift in Sources */,
+				SL000032 /* StoreKitManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		SL500004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				SL000030 /* SmartLedgerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		SL500012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = SL400001 /* SmartLedger */;
+			targetProxy = SL500010 /* PBXContainerItemProxy */;
+		};
+		SL500013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = SL400001 /* SmartLedger */;
+			targetProxy = SL500011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		SL300014 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				SL100110 /* Localizable.strings */,
+				SL100111 /* Localizable.strings */,
+				SL100112 /* Localizable.strings */,
+				SL100113 /* Localizable.strings */,
+				SL100114 /* Localizable.strings */,
+				SL100115 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		SL800001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		SL800002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		SL800003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2048;
+				DEVELOPMENT_TEAM = QZ4K2F8H93;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SmartLedger/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.4.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartledger.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		SL800004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2048;
+				DEVELOPMENT_TEAM = QZ4K2F8H93;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SmartLedger/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.4.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartledger.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		SL800010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartledger.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLedger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartLedger";
+			};
+			name = Debug;
+		};
+		SL800011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartledger.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLedger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartLedger";
+			};
+			name = Release;
+		};
+		SL800020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartledger.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SmartLedger;
+			};
+			name = Debug;
+		};
+		SL800021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartledger.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SmartLedger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		SL600000 /* Build configuration list for PBXProject "SmartLedger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				SL800001 /* Debug */,
+				SL800002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		SL600001 /* Build configuration list for PBXNativeTarget "SmartLedger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				SL800003 /* Debug */,
+				SL800004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		SL600002 /* Build configuration list for PBXNativeTarget "SmartLedgerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				SL800010 /* Debug */,
+				SL800011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		SL600003 /* Build configuration list for PBXNativeTarget "SmartLedgerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				SL800020 /* Debug */,
+				SL800021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = SL700001 /* Project object */;
+}
