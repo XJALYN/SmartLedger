@@ -20,6 +20,7 @@
 "chat.suggestion.dining" = "🍽️ 外食";
 "chat.extracted_intro" = "了解しました。抽出した内容はこちらです：";
 "chat.confirm_save" = "確認して保存";
+"chat.expense_saved" = "家計簿に保存済み";
 "chat.reading_receipt" = "レシートを読み取り中…";
 "chat.receipt_uploaded" = "こちらも受け取りました";
 "chat.analyze_receipt" = "このレシートを分析してください";

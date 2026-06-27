@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartLedger — AI 智能记账</title>
+  <meta name="description" content="SmartLedger is an AI-powered iOS expense tracker. Talk, type, or snap a receipt — confirm and save to your ledger with spending analytics.">
+  <meta name="theme-color" content="#4ADE80">
+  <meta property="og:title" content="SmartLedger — AI 智能记账">
+  <meta property="og:description" content="Talk, type, or snap a receipt. AI extracts expense details and saves them to a searchable ledger.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234ADE80'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui'>$</text></svg>">
+  <style>
+    :root {
+      --mint: #4ade80;
+      --mint-dark: #22c55e;
+      --mint-soft: #ecfdf5;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #f3f4f6;
+      --shadow: 0 20px 50px rgba(17, 24, 39, 0.08);
+      --radius: 20px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+      background: rgba(249, 250, 251, 0.85);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--mint), var(--mint-dark));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 1rem;
+      box-shadow: 0 8px 20px rgba(74, 222, 128, 0.35);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 14px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      background: var(--mint);
+      color: white;
+      box-shadow: 0 10px 24px rgba(74, 222, 128, 0.35);
+    }
+
+    .btn-primary:hover { background: var(--mint-dark); }
+
+    .btn-ghost {
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 72px 0 48px;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--mint-soft);
+      color: #166534;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 34rem;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    .hero-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card img {
+      width: 100%;
+      border-radius: 18px;
+      display: block;
+    }
+
+    .hero-caption {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    section { padding: 56px 0; }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: var(--mint-soft);
+      display: grid;
+      place-items: center;
+      font-size: 1.25rem;
+      margin-bottom: 14px;
+    }
+
+    .feature h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .shot {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .shot:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .shot img {
+      width: 100%;
+      aspect-ratio: 9 / 19.5;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      background: #eef2f7;
+    }
+
+    .shot figcaption {
+      padding: 10px 12px 12px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .stack span {
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: white;
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .cta {
+      margin: 24px 0 72px;
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: white;
+      border-radius: 28px;
+      padding: 48px 32px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #d1d5db;
+      margin-bottom: 24px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0 40px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    footer a { color: var(--mint-dark); font-weight: 600; }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      align-items: center;
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-info h3 {
+      font-size: 1.05rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-info p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 6px;
+    }
+
+    .contact-info .douyin-id {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .contact-qr img {
+      width: 140px;
+      height: 140px;
+      border-radius: 16px;
+      display: block;
+    }
+
+    .contact-qr figcaption {
+      margin-top: 8px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; padding-top: 48px; }
+      .features { grid-template-columns: 1fr 1fr; }
+      .screenshots { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links .btn-ghost { display: none; }
+      .features { grid-template-columns: 1fr; }
+      .screenshots { grid-template-columns: 1fr; }
+      .contact { grid-template-columns: 1fr; text-align: center; }
+      .contact-qr { justify-self: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">$</div>
+        <span>SmartLedger</span>
+      </div>
+      <div class="nav-links">
+        <a class="btn btn-ghost" href="#features">功能</a>
+        <a class="btn btn-ghost" href="#screenshots">截图</a>
+        <a class="btn btn-primary" id="github-link" href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="badge-row">
+          <span class="badge">iOS 17+</span>
+          <span class="badge">SwiftUI</span>
+          <span class="badge">AI 记账</span>
+          <span class="badge">MIT License</span>
+        </div>
+        <h1>说话、打字、拍小票<br>AI 帮你记清楚每一笔</h1>
+        <p>
+          SmartLedger 是一款 AI 驱动的 iOS 智能记账应用。支持文字、语音或小票拍照输入，
+          AI 自动提取消费明细，确认后保存至可搜索账本，并提供多维度支出统计。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="repo-link" href="https://github.com/">查看源码</a>
+          <a class="btn btn-ghost" id="readme-link" href="https://github.com/">阅读 README</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="AI%20Assistant%20Chat.png" alt="SmartLedger AI 聊天界面" width="390" height="844" loading="eager">
+        <p class="hero-caption">AI Assistant Chat · 自然语言 / 语音 / 小票识别</p>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="section-title">
+        <h2>核心功能</h2>
+        <p>从输入到确认、账本到统计，完整覆盖日常记账流程</p>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon">💬</div>
+          <h3>AI 聊天记账</h3>
+          <p>自然语言记账与消费查询，支持语音输入和小票拍照，接入 DashScope Qwen 模型。</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">✅</div>
+          <h3>确认并保存</h3>
+          <p>可编辑 AI 提取的标题、金额、分类、商户和备注，保存后聊天卡片同步显示已保存状态。</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">📒</div>
+          <h3>支出账本</h3>
+          <p>按日分组展示，支持搜索与分类筛选，左滑删除，数据本地安全存储。</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">📊</div>
+          <h3>消费统计</h3>
+          <p>周 / 月 / 年 / 自定义范围，分类环形图、每日柱状图与预算进度一目了然。</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">🎨</div>
+          <h3>主题与语言</h3>
+          <p>5 种主题色，多语言支持（中 / 英 / 日 / 德 / 法 / 西），多货币与 CSV / JSON / PDF 导出。</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3>算力积分</h3>
+          <p>StoreKit 2 内购充值 AI 算力，未配置 API Key 时可使用离线 mock 解析。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="screenshots">
+      <div class="section-title">
+        <h2>应用截图</h2>
+        <p>SwiftUI 实现，界面风格与产品原型保持一致</p>
+      </div>
+      <div class="screenshots">
+        <figure class="shot">
+          <img src="AI%20Assistant%20Chat.png" alt="AI Assistant Chat" loading="lazy">
+          <figcaption>AI Chat</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="Confirm%20Expense.png" alt="Confirm Expense" loading="lazy">
+          <figcaption>Confirm</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="Expense%20Ledger.png" alt="Expense Ledger" loading="lazy">
+          <figcaption>Ledger</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="Spending%20Analytics.png" alt="Spending Analytics" loading="lazy">
+          <figcaption>Stats</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="Settings%20%26%20Credits.png" alt="Settings and Credits" loading="lazy">
+          <figcaption>Settings</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>技术栈</h2>
+        <p>纯 Apple 框架，无第三方依赖</p>
+      </div>
+      <div class="stack">
+        <span>SwiftUI</span>
+        <span>StoreKit 2</span>
+        <span>Speech</span>
+        <span>DashScope API</span>
+        <span>XCTest · 53 tests</span>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>开源 · 可自部署 · 可二次开发</h2>
+      <p>Clone 后在 Xcode 中打开 iOS/SmartLedger.xcodeproj，配置 DashScope API Key 即可体验完整 AI 能力。</p>
+      <a class="btn btn-primary" id="cta-link" href="https://github.com/">Star on GitHub</a>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2>联系方式</h2>
+        <p>Contact · 在抖音关注开发者</p>
+      </div>
+      <div class="contact">
+        <div class="contact-info">
+          <h3>抖音 · @开发1000个应用</h3>
+          <p class="douyin-id">抖音号：KZTY52</p>
+          <p>❤️ 用编程治愈妄想症，亲手做出1000APP</p>
+          <p style="margin-top:12px">在抖音搜索 <strong>KZTY52</strong> 或扫描右侧二维码关注。</p>
+        </div>
+        <figure class="contact-qr">
+          <img src="concat.jpg" alt="抖音主页二维码 · Douyin profile QR code" width="140" height="140" loading="lazy">
+          <figcaption>抖音扫码关注</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SmartLedger v2.4.1 · Made with SwiftUI · <a href="LICENSE">MIT License</a></p>
+    <p style="margin-top:8px">抖音 <strong>@开发1000个应用</strong> · 抖音号 <strong>KZTY52</strong> · <a href="SmartLedger/index.html">设计原型预览</a></p>
+  </footer>
+
+  <script>
+    (function () {
+      var meta = document.querySelector('meta[property="og:url"]');
+      var repoPath = location.pathname.replace(/\/index\.html?$/, '').replace(/\/$/, '');
+      var repoName = repoPath.split('/').filter(Boolean).pop() || 'SmartLedger-images';
+      var githubBase = 'https://github.com/';
+      var owner = '';
+
+      if (location.hostname.endsWith('github.io')) {
+        owner = location.hostname.replace('.github.io', '');
+        var parts = location.pathname.split('/').filter(Boolean);
+        if (parts.length >= 1) repoName = parts[0];
+      }
+
+      var repoUrl = owner
+        ? githubBase + owner + '/' + repoName
+        : githubBase;
+
+      ['github-link', 'repo-link', 'cta-link', 'readme-link'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        if (id === 'readme-link' && owner) {
+          el.href = repoUrl + '#readme';
+        } else if (el.getAttribute('href') === 'https://github.com/') {
+          el.href = repoUrl;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

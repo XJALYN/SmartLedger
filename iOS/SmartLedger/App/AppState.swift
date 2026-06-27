@@ -29,16 +29,28 @@ enum AppTab: Int, CaseIterable, Identifiable {
 final class AppState: ObservableObject {
     @Published var selectedTab: AppTab = .chat
     @Published var pendingDraft: ExpenseDraft?
+    @Published var pendingConfirmMessageID: UUID?
     @Published var showRatingPrompt = false
     @Published var chatMessages: [ChatMessage] = []
     @Published var isProcessingAI = false
 
-    func navigateToConfirm(with draft: ExpenseDraft) {
+    func navigateToConfirm(with draft: ExpenseDraft, fromMessageID: UUID? = nil) {
+        pendingConfirmMessageID = fromMessageID
         pendingDraft = draft
     }
 
     func openManualEntry() {
+        pendingConfirmMessageID = nil
         pendingDraft = ExpenseDraft.empty
+    }
+
+    func markChatExpenseSaved(messageID: UUID) {
+        guard let index = chatMessages.firstIndex(where: { $0.id == messageID }) else { return }
+        chatMessages[index].expenseSaved = true
+    }
+
+    func clearPendingConfirm() {
+        pendingConfirmMessageID = nil
     }
 
     func resetChatIfNeeded() {

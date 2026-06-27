@@ -22,7 +22,9 @@ struct RootView: View {
                 }
             }
         }
-        .sheet(item: $appState.pendingDraft) { draft in
+        .sheet(item: $appState.pendingDraft, onDismiss: {
+            appState.clearPendingConfirm()
+        }) { draft in
             ConfirmExpenseView(draft: draft)
         }
         .fullScreenCover(isPresented: $appState.showRatingPrompt) {

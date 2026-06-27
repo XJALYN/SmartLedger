@@ -20,6 +20,7 @@
 "chat.suggestion.dining" = "🍽️ Restaurante";
 "chat.extracted_intro" = "Entendido. Esto es lo que extraje:";
 "chat.confirm_save" = "Confirmar y guardar";
+"chat.expense_saved" = "Guardado en el libro";
 "chat.reading_receipt" = "Leyendo recibo…";
 "chat.receipt_uploaded" = "También recibí esto";
 "chat.analyze_receipt" = "Analiza este recibo, por favor";

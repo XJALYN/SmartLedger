@@ -20,6 +20,7 @@
 "chat.suggestion.dining" = "🍽️ 餐饮";
 "chat.extracted_intro" = "好的，这是我提取的信息：";
 "chat.confirm_save" = "确认并保存";
+"chat.expense_saved" = "已保存到账本";
 "chat.reading_receipt" = "正在读取收据…";
 "chat.receipt_uploaded" = "我也收到了这个";
 "chat.analyze_receipt" = "请分析这张收据";

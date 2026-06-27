@@ -261,6 +261,10 @@ struct ConfirmExpenseView: View {
     private func saveExpense() {
         draft.amount = parsedAmount
         expenseStore.add(Expense(draft: draft))
+        if let messageID = appState.pendingConfirmMessageID {
+            appState.markChatExpenseSaved(messageID: messageID)
+        }
+        appState.clearPendingConfirm()
         appState.pendingDraft = nil
         appState.selectedTab = .ledger
         dismiss()

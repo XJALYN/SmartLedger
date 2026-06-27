@@ -9,6 +9,8 @@
 ![Tests](https://img.shields.io/badge/tests-53%20passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+**Homepage / 项目主页:** [https://YOUR_USERNAME.github.io/SmartLedger-images/](https://YOUR_USERNAME.github.io/SmartLedger-images/)
+
 ---
 
 ## Features / 功能特性
@@ -259,6 +261,22 @@ Please open an issue first for large features or architectural changes.
 - **[Alibaba Cloud Bailian / DashScope](https://www.aliyun.com/product/bailian)** — Qwen models for AI expense extraction
 - **[Qwen](https://github.com/QwenLM/Qwen)** — underlying LLM and vision models
 - UI design prototypes in `SmartLedger/` served as the visual reference for the SwiftUI implementation
+
+---
+
+## Contact / 联系方式
+
+| Field | Value |
+|-------|-------|
+| **Platform / 平台** | Douyin (抖音) |
+| **Username / 用户名** | @开发1000个应用 |
+| **Douyin ID / 抖音号** | KZTY52 |
+
+> ❤️ 用编程治愈妄想症，亲手做出1000APP
+
+Find the developer on Douyin by searching **KZTY52** or **@开发1000个应用**, or scan the profile QR code in [`concat.jpg`](concat.jpg).
+
+在抖音搜索 **KZTY52** 或 **@开发1000个应用** 关注开发者，也可使用抖音扫描 [`concat.jpg`](concat.jpg) 中的主页二维码。
 
 ---
 

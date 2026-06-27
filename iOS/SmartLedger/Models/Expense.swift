@@ -128,6 +128,7 @@ struct ChatMessage: Identifiable, Equatable {
     let extractedExpense: ExtractedExpense?
     let createdAt: Date
     let isTyping: Bool
+    var expenseSaved: Bool
 
     init(
         id: UUID = UUID(),
@@ -136,7 +137,8 @@ struct ChatMessage: Identifiable, Equatable {
         imageData: Data? = nil,
         extractedExpense: ExtractedExpense? = nil,
         createdAt: Date = Date(),
-        isTyping: Bool = false
+        isTyping: Bool = false,
+        expenseSaved: Bool = false
     ) {
         self.id = id
         self.role = role
@@ -145,6 +147,7 @@ struct ChatMessage: Identifiable, Equatable {
         self.extractedExpense = extractedExpense
         self.createdAt = createdAt
         self.isTyping = isTyping
+        self.expenseSaved = expenseSaved
     }
 }
 

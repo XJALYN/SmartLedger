@@ -20,6 +20,7 @@
 "chat.suggestion.dining" = "🍽️ Essen gehen";
 "chat.extracted_intro" = "Verstanden. Das habe ich extrahiert:";
 "chat.confirm_save" = "Bestätigen & speichern";
+"chat.expense_saved" = "Im Buch gespeichert";
 "chat.reading_receipt" = "Beleg wird gelesen…";
 "chat.receipt_uploaded" = "Das habe ich auch erhalten";
 "chat.analyze_receipt" = "Bitte diesen Beleg analysieren";

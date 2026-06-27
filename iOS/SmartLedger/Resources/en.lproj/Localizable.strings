@@ -20,6 +20,7 @@
 "chat.suggestion.dining" = "🍽️ Dining";
 "chat.extracted_intro" = "Got it. Here's what I extracted:";
 "chat.confirm_save" = "Confirm & Save";
+"chat.expense_saved" = "Saved to Ledger";
 "chat.reading_receipt" = "Reading receipt…";
 "chat.receipt_uploaded" = "Just grabbed this too";
 "chat.analyze_receipt" = "Please analyze this receipt";

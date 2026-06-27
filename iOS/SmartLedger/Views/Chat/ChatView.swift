@@ -148,8 +148,8 @@ struct ChatView: View {
                                     .stroke(Color.borderLight, lineWidth: 1)
                             )
                     }
-                    if let extracted = message.extractedExpense, !message.isTyping {
-                        extractedCard(extracted, theme: theme)
+                    if message.extractedExpense != nil, !message.isTyping {
+                        extractedCard(message, theme: theme)
                     }
                 }
                 Spacer(minLength: 40)
@@ -201,41 +201,55 @@ struct ChatView: View {
         .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.borderLight, lineWidth: 1))
     }
 
-    private func extractedCard(_ extracted: ExtractedExpense, theme: ThemeColors) -> some View {
-        VStack(spacing: 10) {
-            VStack(spacing: 8) {
-                extractedRow("confirm.merchant", extracted.merchant)
-                extractedRow("confirm.amount", MoneyFormatter.string(Decimal(extracted.amount), currency: settings.currency))
-                extractedRow("confirm.category", String(localized: String.LocalizationValue(ExpenseCategory.fromAIValue(extracted.category).localizationKey)))
-                if !extracted.notes.isEmpty {
-                    extractedRow("confirm.notes", extracted.notes)
+    @ViewBuilder
+    private func extractedCard(_ message: ChatMessage, theme: ThemeColors) -> some View {
+        if let extracted = message.extractedExpense {
+            VStack(spacing: 10) {
+                VStack(spacing: 8) {
+                    extractedRow("confirm.merchant", extracted.merchant)
+                    extractedRow("confirm.amount", MoneyFormatter.string(Decimal(extracted.amount), currency: settings.currency))
+                    extractedRow("confirm.category", String(localized: String.LocalizationValue(ExpenseCategory.fromAIValue(extracted.category).localizationKey)))
+                    if !extracted.notes.isEmpty {
+                        extractedRow("confirm.notes", extracted.notes)
+                    }
+                }
+                .padding(12)
+                .background(Color(red: 0.98, green: 0.98, blue: 0.98))
+                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+
+                if message.expenseSaved {
+                    Label("chat.expense_saved", systemImage: "checkmark.circle.fill")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(theme.primary)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(theme.primary.opacity(0.12))
+                        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        .accessibilityIdentifier("chat.confirmButton.saved")
+                } else {
+                    Button {
+                        var draft = extracted.toDraft()
+                        if let lastImage = appState.chatMessages.last(where: { $0.imageData != nil })?.imageData {
+                            draft.receiptImageData = lastImage
+                        }
+                        appState.navigateToConfirm(with: draft, fromMessageID: message.id)
+                    } label: {
+                        Text("chat.confirm_save")
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)
+                            .background(theme.primary)
+                            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    }
+                    .accessibilityIdentifier("chat.confirmButton")
                 }
             }
             .padding(12)
-            .background(Color(red: 0.98, green: 0.98, blue: 0.98))
-            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-
-            Button {
-                var draft = extracted.toDraft()
-                if let lastImage = appState.chatMessages.last(where: { $0.imageData != nil })?.imageData {
-                    draft.receiptImageData = lastImage
-                }
-                appState.navigateToConfirm(with: draft)
-            } label: {
-                Text("chat.confirm_save")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 10)
-                    .background(theme.primary)
-                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-            }
-            .accessibilityIdentifier("chat.confirmButton")
+            .background(Color.white)
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+            .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.borderLight, lineWidth: 1))
         }
-        .padding(12)
-        .background(Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.borderLight, lineWidth: 1))
     }
 
     private func extractedRow(_ titleKey: String, _ value: String) -> some View {
