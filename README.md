@@ -9,7 +9,7 @@
 ![Tests](https://img.shields.io/badge/tests-53%20passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-**Homepage / 项目主页:** [https://YOUR_USERNAME.github.io/SmartLedger-images/](https://YOUR_USERNAME.github.io/SmartLedger-images/)
+**Homepage / 项目主页:** [https://XJALYN.github.io/SmartLedger-images/](https://XJALYN.github.io/SmartLedger-images/)
 
 ---
 
@@ -274,9 +274,15 @@ Please open an issue first for large features or architectural changes.
 
 > ❤️ 用编程治愈妄想症，亲手做出1000APP
 
-Find the developer on Douyin by searching **KZTY52** or **@开发1000个应用**, or scan the profile QR code in [`concat.jpg`](concat.jpg).
+Find the developer on Douyin by searching **KZTY52** or **@开发1000个应用**, or scan the QR code below.
 
-在抖音搜索 **KZTY52** 或 **@开发1000个应用** 关注开发者，也可使用抖音扫描 [`concat.jpg`](concat.jpg) 中的主页二维码。
+在抖音搜索 **KZTY52** 或 **@开发1000个应用** 关注开发者，或扫描下方二维码。
+
+<p align="center">
+  <img src="concat.jpg" alt="Douyin profile QR code · 抖音主页二维码" width="200">
+  <br>
+  <sub>抖音扫码关注</sub>
+</p>
 
 ---
 
