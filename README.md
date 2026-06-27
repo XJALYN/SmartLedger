@@ -1,5 +1,7 @@
 # SmartLedger
 
+[中文 README](README.zh-CN.md)
+
 **SmartLedger** is an AI-powered personal expense tracker for iOS. Talk, type, or snap a receipt — the assistant extracts expense details, lets you confirm and edit them, and saves everything to a searchable ledger with spending analytics.
 
 **SmartLedger** 是一款 AI 驱动的 iOS 智能记账应用。支持文字、语音或小票拍照输入，AI 自动提取消费明细，确认后保存至可搜索账本，并提供多维度支出统计。
@@ -9,7 +11,7 @@
 ![Tests](https://img.shields.io/badge/tests-53%20passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-**Homepage / 项目主页:** [https://XJALYN.github.io/SmartLedger-images/](https://XJALYN.github.io/SmartLedger-images/)
+**Homepage / 项目主页:** [https://XJALYN.github.io/SmartLedger/](https://xjalyn.github.io/SmartLedger/)
 
 ---
 
